@@ -1,6 +1,6 @@
 # Agent experiments log
 
-Each experiment changes one thing, states its hypothesis and prediction before the run, and is judged on the full development suite (12 cases, 9 contrast pairs) against the previous suite with every other fingerprint unchanged. Held-out cases are not used for tuning. Model: qwen3.5-4b, temperature 0, so a rerun of the same configuration reproduces the same trajectory; a rerun is one observation, not a sample.
+Each experiment changes one thing, states its hypothesis and prediction before the run, and is judged on the full development suite (12 cases, 9 contrast pairs) against the previous suite with every other fingerprint unchanged. Held-out cases are not used for tuning. Model: qwen3.5-4b, temperature 0. Temperature 0 did not make runs identical across sessions (3 of 12 cases differed between occasions with identical inputs), so from S5 onward changes are compared only inside one interleaved batch with a control run (see [guard ablation](guard-ablation.md)).
 
 Results use rubric v4 unless stated (changelog: `docs/evaluation-rubric.md`). "Gate-helped" means a readiness guard refused a draft at least once before the case passed.
 
@@ -13,7 +13,8 @@ Results use rubric v4 unless stated (changelog: `docs/evaluation-rubric.md`). "G
 | S2 `suite-20261007T121913Z` | Accepting needs the refund position on record | 8/12 | 6/12 | 2/12 | 11/12 |
 | S3 `suite-20261007T125002Z` | A different delivery address needs a pre-delivery customer request | 9/12 | 6/12 | 3/12 | 12/12 |
 | S4 `suite-20261007T133429Z` | Clearer error for claims citing nothing | 9/12 | 6/12 | 3/12 | 12/12 |
-| S5 | Claim amounts must be supported by cited records | pending | | | |
+| S5 | Claim amounts must be supported by cited records | 9/12 | — | — | 12/12 |
+| Later | Guard ablation, delivery citation, loop guard, partial refunds, cancellation timeline, pause and resume, configuration comparison, held-out run | see [guard ablation](guard-ablation.md), [configuration comparison](configuration-comparison.md), [held-out results](held-out-results.md) | | | |
 
 Under the original scoring (rubric v2) S1–S3 were 6/12 full passes; the move to 8–9 comes from re-scoring the same traces after tool selection was found to score labels rather than behaviour. It is a measurement correction, not an agent improvement.
 
@@ -36,15 +37,14 @@ Under the original scoring (rubric v2) S1–S3 were 6/12 full passes; the move t
 - **Change:** the rejection explains that an absence needs a search record, otherwise it is unknown.
 - **Result:** no outcome changed. The model invented a record ID to cite (refused), then stated "status unknown" as another sourceless claim. The message gave it nowhere to record an unknown. **Next:** a structural fix — an explicit field for open unknowns in the draft.
 
-## S5 — amounts supported by cited records (pending)
+## S5 — amounts supported by cited records
 - **Failure:** invented figures in claims (£12,500 for a £125.00 payment; item prices that appear in no record). Previously caught only by the scorer, after the fact.
 - **Cost:** a misrepresented evidence pack sent to the card network.
 - **Change:** the same rule now runs when a draft is saved: every amount must be on a cited record, or a difference or sum of two of them (e.g. a remaining balance).
 - **Pre-run check:** replayed against all 61 drafts saved to date, it refuses exactly the 7 with known wrong amounts.
 - **Prediction:** MC-a08605886c is refused on invented prices and resaves with supported figures; other cases unchanged.
+- **Result:** partly as predicted. The guard refused the invented prices, but the case then stopped without a draft; a revised refusal that names the figures to remove let it finish with supported amounts. In the ablation, removing the guard adds one harmful outcome per run (an invented figure reaches the evidence pack) with no change in pass rate. **Adopted.**
 
 ## Open items
-- MC-cab68db2e1 defends without citing the delivery scan.
-- MC-a08605886c asks for a "refund record" where the label expects the "provider ledger": a proposed label correction awaiting human review; the frozen label is unchanged.
-- Final decisions after late records arrive are not yet scored (resume not built).
-- Held-out cases have not been run.
+- MC-a08605886c asks for a "refund record" where the label expects the "provider ledger": a proposed label correction awaiting review; the frozen label is unchanged.
+- Three gaps no guard covers, found after these experiments: see [held-out results](held-out-results.md#decision).

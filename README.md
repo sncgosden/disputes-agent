@@ -2,6 +2,14 @@
 
 Helps small online retailers selling physical goods prepare chargeback cases. The agent investigates a dispute across payment, order, delivery, refund and customer records, checks the card network's published guidance, and prepares a cited case for a person to review. It asks for missing facts instead of guessing, and nothing leaves the system without human approval of the exact evidence.
 
+## Findings
+
+- **The held-out set changed the decision.** A fixed rules checklist scored 11 of 12 on the development cases and was chosen by a rule registered before the held-out run. On six new cases it scored 2 of 6, as did the single agent. Every harmful outcome came from one unseen pattern: a customer's unverified claim that the dispute was withdrawn.
+- **Rules and the model fail in different places.** The checklist handled structured records and missed free text; the agent was the only method to pass both injected-instruction cases. The next design is rules first, with the model turning free text into facts the rules consume and unmatched cases escalating to a person.
+- **A specialist team did not earn its cost.** Once its orchestration was fixed it matched the single agent on decisions but completed 1 of 12 cases at 2.5 times the tokens and time.
+- **Pass rate alone would have removed good guards.** Removing the refund-status or amounts guard leaves the pass count unchanged but adds a harmful outcome each run, so harmful outcomes are reported beside pass rate throughout.
+- **Cost is human time, not tokens.** About £0.12 of hosted-model tokens per case; the economics depend on review minutes and correctness.
+
 ## Status
 
 | Area | State |
