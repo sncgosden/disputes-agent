@@ -1,4 +1,4 @@
-"""Step 136: the agent loop.
+"""The agent loop.
 
 goal -> model chooses one tool call -> code validates -> executor runs it -> observation
 returned to the model -> repeat, until the model saves a draft decision or a budget stops it.

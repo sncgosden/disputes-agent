@@ -1,4 +1,4 @@
-"""Read tools for the case preparation agent (steps 91-94).
+"""Read tools for the case preparation agent.
 
 Every call is validated against case_agent.schemas before it runs. Reads are scoped to
 the requesting merchant; a case or record belonging to anyone else is reported as not

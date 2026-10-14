@@ -1,4 +1,4 @@
-"""Write tools for the case preparation agent (steps 95-98).
+"""Write tools for the case preparation agent.
 
 Each run writes to its own workspace (a small SQLite file), never to the frozen dataset.
 Every write carries an action_id: repeating it with the same arguments has exactly one
