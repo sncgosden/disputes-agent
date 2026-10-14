@@ -1,0 +1,264 @@
+{
+  "run_id": "suite-20261012T001740Z",
+  "config": {
+    "model": "qwen3.5-4b",
+    "split": "development",
+    "records_hash": "6cdaadd3fd1d",
+    "prompt_hash": "3b58ac512d4b",
+    "code": {
+      "case_agent/agent.py": "601f2dbe09e1",
+      "case_agent/workspace.py": "4692cd6a142d",
+      "case_agent/tools.py": "07e71de57440",
+      "case_agent/schemas.py": "f536d220b1de",
+      "case_agent/team.py": "a1e93b0018eb",
+      "case_agent/checklist.py": "1af07f941e31",
+      "case_agent/worker.py": "f98d5702aba5",
+      "realworld/score_case.py": "eb87aa87ecd4"
+    },
+    "rubric_version": 5,
+    "without": [],
+    "features": [],
+    "resume": true,
+    "method": "team",
+    "batch": {
+      "id": "batch-20261011T235057Z",
+      "run": "2/3",
+      "repeat": 1
+    }
+  },
+  "cases_passed": "1/12",
+  "passed_unaided": "0/12",
+  "passed_with_gate_help": "1/12",
+  "decision_now_correct": "8/12",
+  "baseline_always_respond_decision_now": "4/12",
+  "baseline_always_wait_decision_now": "6/12",
+  "failed_checks": {
+    "no_unneeded_questions": 6,
+    "no_repeated_invalid_calls": 5,
+    "required_evidence": 3,
+    "tool_selection": 2,
+    "step_timeout": 2,
+    "decision_now": 2,
+    "no_false_readiness": 1
+  },
+  "harms": {},
+  "total_seconds": 2717.5,
+  "total_tokens": 1228663,
+  "median_step_seconds": 9.7,
+  "cases": [
+    {
+      "case_id": "MC-7f29dad220",
+      "harms": [],
+      "pattern": "missing_delivery_scan",
+      "expected_now": "wait_for_information",
+      "decision_now": "wait_for_information",
+      "final_decision": "respond_with_evidence",
+      "resumed": true,
+      "passed": true,
+      "failed_checks": [],
+      "gate_refusals": 4,
+      "stop_reason": "ready",
+      "model_actions": 14,
+      "seconds": 174.6,
+      "tokens": 120277
+    },
+    {
+      "case_id": "MC-aa077ca73b",
+      "harms": [],
+      "pattern": "address_conflict",
+      "expected_now": "escalate",
+      "decision_now": "escalate",
+      "final_decision": null,
+      "resumed": false,
+      "passed": false,
+      "failed_checks": [
+        "no_unneeded_questions",
+        "no_repeated_invalid_calls"
+      ],
+      "gate_refusals": 1,
+      "stop_reason": "missing_fact",
+      "model_actions": 32,
+      "seconds": 427.2,
+      "tokens": 169886
+    },
+    {
+      "case_id": "MC-a08605886c",
+      "harms": [],
+      "pattern": "partial_refund_overlap",
+      "expected_now": "wait_for_information",
+      "decision_now": "wait_for_information",
+      "final_decision": null,
+      "resumed": false,
+      "passed": false,
+      "failed_checks": [
+        "no_repeated_invalid_calls"
+      ],
+      "gate_refusals": 2,
+      "stop_reason": "missing_fact",
+      "model_actions": 20,
+      "seconds": 254.2,
+      "tokens": 76138
+    },
+    {
+      "case_id": "MC-f22a84b146",
+      "harms": [],
+      "pattern": "missing_delivery_scan",
+      "expected_now": "wait_for_information",
+      "decision_now": "wait_for_information",
+      "final_decision": "wait_for_information",
+      "resumed": true,
+      "passed": false,
+      "failed_checks": [
+        "tool_selection",
+        "no_repeated_invalid_calls"
+      ],
+      "gate_refusals": 5,
+      "stop_reason": "missing_fact",
+      "model_actions": 34,
+      "seconds": 526.1,
+      "tokens": 269361
+    },
+    {
+      "case_id": "MC-c7d1c0083d",
+      "step_timeout": "timed out",
+      "passed": false,
+      "decision_now": null,
+      "expected_now": "wait_for_information",
+      "failed_checks": [
+        "step_timeout"
+      ],
+      "harms": [],
+      "gate_refusals": 0,
+      "seconds": 0
+    },
+    {
+      "case_id": "MC-e48db1e670",
+      "harms": [],
+      "pattern": "cancelled_before_dispatch",
+      "expected_now": "wait_for_information",
+      "decision_now": "wait_for_information",
+      "final_decision": "respond_with_evidence",
+      "resumed": true,
+      "passed": false,
+      "failed_checks": [
+        "required_evidence",
+        "no_false_readiness",
+        "no_repeated_invalid_calls"
+      ],
+      "gate_refusals": 6,
+      "stop_reason": "ready",
+      "model_actions": 28,
+      "seconds": 291.3,
+      "tokens": 301020
+    },
+    {
+      "case_id": "MC-0876b85dc7",
+      "harms": [],
+      "pattern": "cancelled_before_dispatch",
+      "expected_now": "accept_dispute",
+      "decision_now": "wait_for_information",
+      "final_decision": null,
+      "resumed": false,
+      "passed": false,
+      "failed_checks": [
+        "decision_now",
+        "required_evidence",
+        "no_unneeded_questions",
+        "no_repeated_invalid_calls"
+      ],
+      "gate_refusals": 0,
+      "stop_reason": "missing_fact",
+      "model_actions": 17,
+      "seconds": 184.8,
+      "tokens": 50371
+    },
+    {
+      "case_id": "MC-021b944d10",
+      "harms": [],
+      "pattern": "partial_refund_overlap",
+      "expected_now": "respond_with_evidence",
+      "decision_now": "respond_with_evidence",
+      "final_decision": null,
+      "resumed": false,
+      "passed": false,
+      "failed_checks": [
+        "no_unneeded_questions"
+      ],
+      "gate_refusals": 0,
+      "stop_reason": "missing_fact",
+      "model_actions": 15,
+      "seconds": 201.2,
+      "tokens": 48042
+    },
+    {
+      "case_id": "MC-3a7c02a008",
+      "harms": [],
+      "pattern": "mismatched_order_id",
+      "expected_now": "wait_for_information",
+      "decision_now": "wait_for_information",
+      "final_decision": null,
+      "resumed": false,
+      "passed": false,
+      "failed_checks": [
+        "tool_selection",
+        "no_unneeded_questions"
+      ],
+      "gate_refusals": 1,
+      "stop_reason": "missing_fact",
+      "model_actions": 16,
+      "seconds": 212.7,
+      "tokens": 51219
+    },
+    {
+      "case_id": "MC-cab68db2e1",
+      "step_timeout": "timed out",
+      "passed": false,
+      "decision_now": null,
+      "expected_now": "respond_with_evidence",
+      "failed_checks": [
+        "step_timeout"
+      ],
+      "harms": [],
+      "gate_refusals": 0,
+      "seconds": 0
+    },
+    {
+      "case_id": "MC-8209da7a1c",
+      "harms": [],
+      "pattern": "mismatched_order_id",
+      "expected_now": "respond_with_evidence",
+      "decision_now": "wait_for_information",
+      "final_decision": null,
+      "resumed": false,
+      "passed": false,
+      "failed_checks": [
+        "decision_now",
+        "required_evidence",
+        "no_unneeded_questions"
+      ],
+      "gate_refusals": 1,
+      "stop_reason": "missing_fact",
+      "model_actions": 25,
+      "seconds": 212.2,
+      "tokens": 85521
+    },
+    {
+      "case_id": "MC-f32ec10443",
+      "harms": [],
+      "pattern": "address_conflict",
+      "expected_now": "respond_with_evidence",
+      "decision_now": "respond_with_evidence",
+      "final_decision": null,
+      "resumed": false,
+      "passed": false,
+      "failed_checks": [
+        "no_unneeded_questions"
+      ],
+      "gate_refusals": 1,
+      "stop_reason": "missing_fact",
+      "model_actions": 18,
+      "seconds": 233.2,
+      "tokens": 56828
+    }
+  ]
+}

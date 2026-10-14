@@ -1,0 +1,925 @@
+{
+  "run": "baseline-keyword",
+  "ran_at": "2026-10-06T19:41:09.686108+00:00",
+  "k": 5,
+  "method": "BM25 keyword search over fixed-size passages",
+  "corpus_version": "abd9dd290bffde5a2ed6ae17542e69763a8d346b49fa8b906e7663845d7b99f9",
+  "chunking_version": "2",
+  "labels_reviewed_by": "Sebastian, 6 October 2026 (accepted all ten after the draft was narrowed and extended)",
+  "filtered": {
+    "aggregate": {
+      "questions": 10,
+      "hit_rate": 0.4,
+      "hits": 4,
+      "mean_precision_at_k": 0.14,
+      "mrr": 0.275,
+      "top_1_correct": 2,
+      "misses": [
+        "q03",
+        "q04",
+        "q05",
+        "q08",
+        "q09",
+        "q10"
+      ]
+    },
+    "questions": [
+      {
+        "id": "q01",
+        "question": "What evidence should a merchant provide for a product not received dispute?",
+        "filters": {
+          "network": "visa"
+        },
+        "hit": true,
+        "first_relevant_rank": 2,
+        "relevant_in_top_k": 2,
+        "precision_at_k": 0.4,
+        "reciprocal_rank": 0.5,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "stripe_reason_codes:e200401e2753:text:12000",
+            "heading": "Product unacceptable",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "id": "stripe_reason_codes:e200401e2753:text:11000",
+            "heading": "Product not received",
+            "relevant": true
+          },
+          {
+            "rank": 3,
+            "id": "visa_merchant_guidelines:5505594a9ae3:53:0",
+            "heading": "4 Providing Compelling",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "id": "visa_merchant_guidelines:5505594a9ae3:40:0",
+            "heading": "Condition 13.1 Merchandise/Services Not Received",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "id": "stripe_reason_codes:e200401e2753:text:10000",
+            "heading": "General",
+            "relevant": true
+          }
+        ]
+      },
+      {
+        "id": "q02",
+        "question": "How should a merchant respond to a duplicate charge dispute?",
+        "filters": {
+          "network": "visa"
+        },
+        "hit": true,
+        "first_relevant_rank": 1,
+        "relevant_in_top_k": 2,
+        "precision_at_k": 0.4,
+        "reciprocal_rank": 1.0,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "visa_merchant_guidelines:5505594a9ae3:37:0",
+            "heading": "Condition 12.6 Duplicate Processing",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "id": "stripe_categories:6fa10bd1ec03:text:21000",
+            "heading": "evidence you can submit for - Physical product",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "id": "visa_merchant_guidelines:5505594a9ae3:22:0",
+            "heading": "3 Dispute",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "id": "stripe_categories:6fa10bd1ec03:text:23000",
+            "heading": "evidence you can submit for - Digital product or service",
+            "relevant": true
+          },
+          {
+            "rank": 5,
+            "id": "stripe_categories:6fa10bd1ec03:text:25000",
+            "heading": "evidence you can submit for - Digital product or service",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "id": "q03",
+        "question": "The customer says their refund was never processed. What applies?",
+        "filters": {
+          "network": "visa"
+        },
+        "hit": false,
+        "first_relevant_rank": null,
+        "relevant_in_top_k": 0,
+        "precision_at_k": 0.0,
+        "reciprocal_rank": 0.0,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "stripe_reason_codes:e200401e2753:text:17000",
+            "heading": "Subscription canceled",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "id": "visa_merchant_guidelines:5505594a9ae3:36:0",
+            "heading": "Condition 12.5 Incorrect Amount",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "id": "stripe_categories:6fa10bd1ec03:text:11000",
+            "heading": "Cash App Pay",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "id": "stripe_reason_codes:e200401e2753:text:16000",
+            "heading": "Subscription canceled",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "id": "stripe_reason_codes:e200401e2753:text:1000",
+            "heading": "Dispute reason codes",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "id": "q04",
+        "question": "Can evidence be edited or resubmitted after a dispute response is submitted?",
+        "filters": {
+          "kind": [
+            "provider",
+            "api"
+          ]
+        },
+        "hit": false,
+        "first_relevant_rank": null,
+        "relevant_in_top_k": 0,
+        "precision_at_k": 0.0,
+        "reciprocal_rank": 0.0,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "stripe_responding:10defa6afc69:text:14000",
+            "heading": "Submit evidence through the Dashboard",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "id": "stripe_responding:10defa6afc69:text:15000",
+            "heading": "Submit evidence through the Dashboard",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "id": "stripe_dispute_update:8c056ae5990f:text:3000",
+            "heading": "Parameters",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "id": "stripe_reason_codes:e200401e2753:text:52000",
+            "heading": "General",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "id": "stripe_reason_codes:e200401e2753:text:54000",
+            "heading": "General",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "id": "q05",
+        "question": "What happens if the merchant misses the dispute response deadline?",
+        "filters": {
+          "kind": [
+            "provider",
+            "api"
+          ]
+        },
+        "hit": false,
+        "first_relevant_rank": null,
+        "relevant_in_top_k": 0,
+        "precision_at_k": 0.0,
+        "reciprocal_rank": 0.0,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "stripe_reason_codes:e200401e2753:text:54000",
+            "heading": "General",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "id": "stripe_reason_codes:e200401e2753:text:53000",
+            "heading": "General",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "id": "stripe_reason_codes:e200401e2753:text:52000",
+            "heading": "General",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "id": "stripe_reason_codes:e200401e2753:text:56000",
+            "heading": "General",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "id": "stripe_categories:6fa10bd1ec03:text:59000",
+            "heading": "evidence you can submit for - Digital product or service",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "id": "q06",
+        "question": "How should a webhook handler treat the same event delivered twice?",
+        "filters": {
+          "kind": [
+            "api"
+          ]
+        },
+        "hit": true,
+        "first_relevant_rank": 4,
+        "relevant_in_top_k": 1,
+        "precision_at_k": 0.2,
+        "reciprocal_rank": 0.25,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "stripe_idempotency:6a9b81d1254e:text:0",
+            "heading": "Idempotent requests",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "id": "stripe_webhooks:ea36b2d30462:text:26000",
+            "heading": "Debug webhook integrations",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "id": "stripe_webhooks:ea36b2d30462:text:16000",
+            "heading": "Python",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "id": "stripe_webhooks:ea36b2d30462:text:33000",
+            "heading": "Handle duplicate events",
+            "relevant": true
+          },
+          {
+            "rank": 5,
+            "id": "stripe_webhooks:ea36b2d30462:text:10000",
+            "heading": "Example endpoint",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "id": "q07",
+        "question": "How do idempotency keys prevent a request being applied twice?",
+        "filters": {
+          "kind": [
+            "api"
+          ]
+        },
+        "hit": true,
+        "first_relevant_rank": 1,
+        "relevant_in_top_k": 2,
+        "precision_at_k": 0.4,
+        "reciprocal_rank": 1.0,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "stripe_idempotency:6a9b81d1254e:text:0",
+            "heading": "Idempotent requests",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "id": "stripe_idempotency:6a9b81d1254e:text:1000",
+            "heading": "Idempotent requests",
+            "relevant": true
+          },
+          {
+            "rank": 3,
+            "id": "stripe_idempotency:6a9b81d1254e:text:2000",
+            "heading": "Idempotent requests",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "id": "stripe_webhooks:ea36b2d30462:text:39000",
+            "heading": "Verify webhook signatures with official libraries",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "id": "stripe_webhooks:ea36b2d30462:text:29000",
+            "heading": "Fix HTTP status codes",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "id": "q08",
+        "question": "How can a test-mode dispute be made to win or lose?",
+        "filters": {
+          "kind": [
+            "provider"
+          ]
+        },
+        "hit": false,
+        "first_relevant_rank": null,
+        "relevant_in_top_k": 0,
+        "precision_at_k": 0.0,
+        "reciprocal_rank": 0.0,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "stripe_responding:10defa6afc69:text:4000",
+            "heading": "Visa compliance disputes",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "id": "stripe_responding:10defa6afc69:text:0",
+            "heading": "Respond to disputes",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "id": "stripe_testing:610e3fe74e60:text:75000",
+            "heading": "Rate limits",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "id": "stripe_categories:6fa10bd1ec03:text:27000",
+            "heading": "evidence you can submit for - Offline service",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "id": "stripe_categories:6fa10bd1ec03:text:28000",
+            "heading": "Fraudulent",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "id": "q09",
+        "question": "Which Visa disputes qualify for Compelling Evidence 3.0?",
+        "filters": {
+          "network": "visa",
+          "kind": [
+            "provider"
+          ]
+        },
+        "hit": false,
+        "first_relevant_rank": null,
+        "relevant_in_top_k": 0,
+        "precision_at_k": 0.0,
+        "reciprocal_rank": 0.0,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "stripe_visa_ce3:bb7cebf0e9e7:text:8000",
+            "heading": "Testing",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "id": "stripe_visa_ce3:bb7cebf0e9e7:text:9000",
+            "heading": "Testing",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "id": "stripe_visa_ce3:bb7cebf0e9e7:text:0",
+            "heading": "Visa Compelling Evidence 3.0 disputes",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "id": "stripe_visa_ce3:bb7cebf0e9e7:text:5000",
+            "heading": "The enhanced eligibility object",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "id": "stripe_visa_ce3:bb7cebf0e9e7:text:7000",
+            "heading": "Submission lifecycle",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "id": "q10",
+        "question": "Should a merchant accept a not-received dispute when the goods were never delivered?",
+        "filters": {
+          "network": "visa"
+        },
+        "hit": false,
+        "first_relevant_rank": null,
+        "relevant_in_top_k": 0,
+        "precision_at_k": 0.0,
+        "reciprocal_rank": 0.0,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "stripe_reason_codes:e200401e2753:text:17000",
+            "heading": "Subscription canceled",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "id": "visa_merchant_guidelines:5505594a9ae3:40:0",
+            "heading": "Condition 13.1 Merchandise/Services Not Received",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "id": "visa_merchant_guidelines:5505594a9ae3:54:1000",
+            "heading": "4 Providing Compelling Evidence",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "id": "visa_merchant_guidelines:5505594a9ae3:46:1000",
+            "heading": "Condition 13.5 Misrepresentation",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "id": "visa_merchant_guidelines:5505594a9ae3:40:1000",
+            "heading": "Condition 13.1 Merchandise/Services Not Received",
+            "relevant": false
+          }
+        ]
+      }
+    ]
+  },
+  "unfiltered": {
+    "aggregate": {
+      "questions": 10,
+      "hit_rate": 0.4,
+      "hits": 4,
+      "mean_precision_at_k": 0.1,
+      "mrr": 0.17833333333333332,
+      "top_1_correct": 1,
+      "misses": [
+        "q03",
+        "q04",
+        "q05",
+        "q08",
+        "q09",
+        "q10"
+      ]
+    },
+    "questions": [
+      {
+        "id": "q01",
+        "question": "What evidence should a merchant provide for a product not received dispute?",
+        "filters": {},
+        "hit": true,
+        "first_relevant_rank": 4,
+        "relevant_in_top_k": 1,
+        "precision_at_k": 0.2,
+        "reciprocal_rank": 0.25,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "stripe_reason_codes:e200401e2753:text:12000",
+            "heading": "Product unacceptable",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "id": "stripe_reason_codes:e200401e2753:text:61000",
+            "heading": "Product not received",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "id": "stripe_reason_codes:e200401e2753:text:62000",
+            "heading": "Product unacceptable",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "id": "stripe_reason_codes:e200401e2753:text:11000",
+            "heading": "Product not received",
+            "relevant": true
+          },
+          {
+            "rank": 5,
+            "id": "stripe_reason_codes:e200401e2753:text:60000",
+            "heading": "Product not received",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "id": "q02",
+        "question": "How should a merchant respond to a duplicate charge dispute?",
+        "filters": {},
+        "hit": true,
+        "first_relevant_rank": 3,
+        "relevant_in_top_k": 1,
+        "precision_at_k": 0.2,
+        "reciprocal_rank": 0.3333333333333333,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "stripe_categories:6fa10bd1ec03:text:21000",
+            "heading": "evidence you can submit for - Physical product",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "id": "stripe_reason_codes:e200401e2753:text:41000",
+            "heading": "Duplicate",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "id": "visa_merchant_guidelines:5505594a9ae3:37:0",
+            "heading": "Condition 12.6 Duplicate Processing",
+            "relevant": true
+          },
+          {
+            "rank": 4,
+            "id": "visa_merchant_guidelines:5505594a9ae3:22:0",
+            "heading": "3 Dispute",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "id": "visa_merchant_guidelines:5505594a9ae3:42:0",
+            "heading": "Condition 13.2 Cancelled Recurring Transaction",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "id": "q03",
+        "question": "The customer says their refund was never processed. What applies?",
+        "filters": {},
+        "hit": false,
+        "first_relevant_rank": null,
+        "relevant_in_top_k": 0,
+        "precision_at_k": 0.0,
+        "reciprocal_rank": 0.0,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "stripe_reason_codes:e200401e2753:text:17000",
+            "heading": "Subscription canceled",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "id": "stripe_reason_codes:e200401e2753:text:38000",
+            "heading": "Credit not processed",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "id": "stripe_reason_codes:e200401e2753:text:33000",
+            "heading": "Credit not processed",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "id": "visa_merchant_guidelines:5505594a9ae3:36:0",
+            "heading": "Condition 12.5 Incorrect Amount",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "id": "stripe_reason_codes:e200401e2753:text:34000",
+            "heading": "Credit not processed",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "id": "q04",
+        "question": "Can evidence be edited or resubmitted after a dispute response is submitted?",
+        "filters": {},
+        "hit": false,
+        "first_relevant_rank": null,
+        "relevant_in_top_k": 0,
+        "precision_at_k": 0.0,
+        "reciprocal_rank": 0.0,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "mastercard_chargeback_guide:6526537019ed:83:2000",
+            "heading": null,
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "id": "stripe_dispute_update:8c056ae5990f:text:3000",
+            "heading": "Parameters",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "id": "stripe_responding:10defa6afc69:text:14000",
+            "heading": "Submit evidence through the Dashboard",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "id": "stripe_visa_ce3:bb7cebf0e9e7:text:6000",
+            "heading": "Submission lifecycle",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "id": "stripe_reason_codes:e200401e2753:text:52000",
+            "heading": "General",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "id": "q05",
+        "question": "What happens if the merchant misses the dispute response deadline?",
+        "filters": {},
+        "hit": false,
+        "first_relevant_rank": null,
+        "relevant_in_top_k": 0,
+        "precision_at_k": 0.0,
+        "reciprocal_rank": 0.0,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "stripe_reason_codes:e200401e2753:text:54000",
+            "heading": "General",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "id": "stripe_reason_codes:e200401e2753:text:53000",
+            "heading": "General",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "id": "stripe_categories:6fa10bd1ec03:text:59000",
+            "heading": "evidence you can submit for - Digital product or service",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "id": "stripe_reason_codes:e200401e2753:text:52000",
+            "heading": "General",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "id": "stripe_categories:6fa10bd1ec03:text:57000",
+            "heading": "evidence you can submit for - Physical product",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "id": "q06",
+        "question": "How should a webhook handler treat the same event delivered twice?",
+        "filters": {},
+        "hit": true,
+        "first_relevant_rank": 5,
+        "relevant_in_top_k": 1,
+        "precision_at_k": 0.2,
+        "reciprocal_rank": 0.2,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "stripe_webhooks:ea36b2d30462:text:8000",
+            "heading": "Test locally without a registered URL",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "id": "stripe_webhooks:ea36b2d30462:text:10000",
+            "heading": "Example endpoint",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "id": "stripe_webhooks:ea36b2d30462:text:7000",
+            "heading": "Test locally without a registered URL",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "id": "stripe_webhooks:ea36b2d30462:text:25000",
+            "heading": "Using Sinatra",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "id": "stripe_webhooks:ea36b2d30462:text:33000",
+            "heading": "Handle duplicate events",
+            "relevant": true
+          }
+        ]
+      },
+      {
+        "id": "q07",
+        "question": "How do idempotency keys prevent a request being applied twice?",
+        "filters": {},
+        "hit": true,
+        "first_relevant_rank": 1,
+        "relevant_in_top_k": 2,
+        "precision_at_k": 0.4,
+        "reciprocal_rank": 1.0,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "stripe_idempotency:6a9b81d1254e:text:1000",
+            "heading": "Idempotent requests",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "id": "stripe_idempotency:6a9b81d1254e:text:0",
+            "heading": "Idempotent requests",
+            "relevant": true
+          },
+          {
+            "rank": 3,
+            "id": "stripe_idempotency:6a9b81d1254e:text:2000",
+            "heading": "Idempotent requests",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "id": "visa_merchant_guidelines:5505594a9ae3:10:0",
+            "heading": "2 Disputes",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "id": "stripe_webhooks:ea36b2d30462:text:39000",
+            "heading": "Verify webhook signatures with official libraries",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "id": "q08",
+        "question": "How can a test-mode dispute be made to win or lose?",
+        "filters": {},
+        "hit": false,
+        "first_relevant_rank": null,
+        "relevant_in_top_k": 0,
+        "precision_at_k": 0.0,
+        "reciprocal_rank": 0.0,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "visa_merchant_guidelines:5505594a9ae3:10:0",
+            "heading": "2 Disputes",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "id": "stripe_testing:610e3fe74e60:text:75000",
+            "heading": "Rate limits",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "id": "stripe_responding:10defa6afc69:text:4000",
+            "heading": "Visa compliance disputes",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "id": "stripe_responding:10defa6afc69:text:0",
+            "heading": "Respond to disputes",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "id": "stripe_categories:6fa10bd1ec03:text:28000",
+            "heading": "Fraudulent",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "id": "q09",
+        "question": "Which Visa disputes qualify for Compelling Evidence 3.0?",
+        "filters": {},
+        "hit": false,
+        "first_relevant_rank": null,
+        "relevant_in_top_k": 0,
+        "precision_at_k": 0.0,
+        "reciprocal_rank": 0.0,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "stripe_visa_ce3:bb7cebf0e9e7:text:8000",
+            "heading": "Testing",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "id": "stripe_visa_ce3:bb7cebf0e9e7:text:9000",
+            "heading": "Testing",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "id": "stripe_visa_ce3:bb7cebf0e9e7:text:0",
+            "heading": "Visa Compelling Evidence 3.0 disputes",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "id": "stripe_visa_ce3:bb7cebf0e9e7:text:5000",
+            "heading": "The enhanced eligibility object",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "id": "stripe_visa_ce3:bb7cebf0e9e7:text:6000",
+            "heading": "Submission lifecycle",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "id": "q10",
+        "question": "Should a merchant accept a not-received dispute when the goods were never delivered?",
+        "filters": {},
+        "hit": false,
+        "first_relevant_rank": null,
+        "relevant_in_top_k": 0,
+        "precision_at_k": 0.0,
+        "reciprocal_rank": 0.0,
+        "returned": [
+          {
+            "rank": 1,
+            "id": "stripe_reason_codes:e200401e2753:text:60000",
+            "heading": "Product not received",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "id": "mastercard_chargeback_guide:6526537019ed:136:0",
+            "heading": null,
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "id": "stripe_reason_codes:e200401e2753:text:26000",
+            "heading": "General",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "id": "mastercard_chargeback_guide:6526537019ed:1011:0",
+            "heading": null,
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "id": "mastercard_chargeback_guide:6526537019ed:153:1000",
+            "heading": null,
+            "relevant": false
+          }
+        ]
+      }
+    ]
+  },
+  "limits": "Ten questions: a baseline for comparing changes, not a measure of production quality."
+}

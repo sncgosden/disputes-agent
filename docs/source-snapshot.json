@@ -1,0 +1,33 @@
+{
+  "repository": "https://github.com/sebastiangosden/dispute-triage",
+  "commit": "e6e8d9e29f18e7cb65908e4b8943ebd83b51f20f",
+  "copied_files": {
+    "reference/triage/src/llm.py": "b01f80e44141f5431b5291f536a4f42b51500ee9870961ecfe0747b3c98b3c3e",
+    "reference/triage/src/retrieve.py": "830aee6a1ee0174851e9381a121b4fabd942d7a674ff4a55d2742cf4a1775bce",
+    "reference/triage/src/triage.py": "b15390b53033b0f03651b79358aada3a9598bbffdd866494b840bec62a0f6329",
+    "reference/triage/rules/dispute_rules.md": "7e23d3acb913e5beb698734fb69374386dd1eb4edc756cf95b4af2e2579dd67b",
+    "reference/triage/data/cases_labelled.csv": "9a6fa0a489627a6b9ea43b8a1b3d0a1d9ffae5b1e9c1f481bed148b04b114f83",
+    "reference/triage/docs/categories.md": "b9e9db3f36e4147dd6da14a6b4cafead2ce3174ecc4df6323cf20c253fbe1387",
+    "reference/triage/src/score.py": "787417b67811e29f1b53face5fedb5da4c10adc04f9aa574b015ffe37ea7d9a5"
+  },
+  "reference_files": {
+    "results/comparison_v2.md": "633353adf9bf952860745c2006fefdda0f3a3e91eb48e32ead7c6e105d41a7c1",
+    "results/routing_v2.md": "7b0d68c864d190205297302c53f18a5cdf3d54c3ac3894d77d46e15e325d1444",
+    "docs/decision_memo.md": "3a79d62bda3fd4b6642e42630f01246867447522e859352ad6c7ff5225cfac23"
+  },
+  "previous_snapshot": {
+    "commit": "f7db5279c8743abb7e1d667a187c22652932f256",
+    "copied_files": {
+      "src/llm.py": "cbc9fba70f2d11d3516b157b0cd0826cfda550ae1ca33542c30834eaab5c8f3a",
+      "src/retrieve.py": "830aee6a1ee0174851e9381a121b4fabd942d7a674ff4a55d2742cf4a1775bce",
+      "src/triage.py": "1dc80fa5b54a8bf67807c5b85b345cdb5c1f3dd1da6d3f6fdce701061a160c7f",
+      "rules/dispute_rules.md": "7e23d3acb913e5beb698734fb69374386dd1eb4edc756cf95b4af2e2579dd67b",
+      "data/cases_labelled.csv": "20fe9146a82b9200ff965dc392f4a685068f0c2aa36894cc8b25a53bcbd0dd67",
+      "docs/categories.md": "4466ff3987e4f4e6ef6255ae1d68b503e3ec62a405080f694b0e2dd42f411bcb",
+      "docs/case_schema.md": "173d54760db56a5f78793a7a97d2fab9cb7764d58e985585c6d0e8fd278353ec",
+      "requirements.txt": "21468c94a727c8f6c3f6de26396edd66bbddd81e82ca01e36c62324b33283967"
+    }
+  },
+  "scope": "Finished triage source snapshot plus historical evaluation references. The original baseline run remains tied to its original manifest. Reference metrics describe triage only, not agent performance. The case-generation notes and the iteration log stay in the source repository. The project's requirements.txt has since added the PDF reader used for guidance capture, so it is no longer a copy.",
+  "layout_note": "Final triage code lives under reference/triage. Original paths are preserved in previous_snapshot and historical baseline manifest."
+}

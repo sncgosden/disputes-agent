@@ -1,0 +1,7 @@
+.env
+runtime/
+corpus/
+private/
+research/notes/
+__pycache__/
+*.pyc

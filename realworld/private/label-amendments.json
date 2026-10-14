@@ -1,0 +1,23 @@
+{
+  "_about": "Reviewed changes to expected answers. The frozen scenario-truth.json is never edited; the scorer applies these on top, and each records who decided, when and why.",
+  "amendments": [
+    {
+      "case_id": "MC-f22a84b146",
+      "decided_by": "Sebastian (product owner)",
+      "date": "2026-10-11",
+      "policy": "Before accepting a dispute, the merchant must know it has not already refunded the customer; a carrier confirming the parcel lost does not establish that.",
+      "reason": "In batch-20261009T001752Z the agent proposed the original expected answer (accept) after the carrier reported the parcel lost; the refund-status guard refused it because no record shows whether a refund was issued. Asking costs the merchant a minute; a double refund costs money.",
+      "changes": {
+        "expected_recommendation": "wait_for_information",
+        "expected_state_after_event": "waiting_for_information",
+        "acceptable_next_actions_add": [
+          "request_refund_status"
+        ]
+      },
+      "previous": {
+        "expected_recommendation": "accept_dispute",
+        "expected_state_after_event": "ready_for_review"
+      }
+    }
+  ]
+}

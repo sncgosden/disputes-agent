@@ -1,0 +1,32 @@
+{
+  "recorded_at": "2026-10-05T21:37:20.825985+01:00",
+  "source_repository": "/Users/sebastian/Developer/dispute-triage",
+  "commit": "f7db5279c8743abb7e1d667a187c22652932f256",
+  "sha256": {
+    "src/triage.py": "1dc80fa5b54a8bf67807c5b85b345cdb5c1f3dd1da6d3f6fdce701061a160c7f",
+    "src/llm.py": "cbc9fba70f2d11d3516b157b0cd0826cfda550ae1ca33542c30834eaab5c8f3a",
+    "src/retrieve.py": "830aee6a1ee0174851e9381a121b4fabd942d7a674ff4a55d2742cf4a1775bce",
+    "rules/dispute_rules.md": "7e23d3acb913e5beb698734fb69374386dd1eb4edc756cf95b4af2e2579dd67b",
+    "data/cases_labelled.csv": "20fe9146a82b9200ff965dc392f4a685068f0c2aa36894cc8b25a53bcbd0dd67",
+    "requirements.txt": "21468c94a727c8f6c3f6de26396edd66bbddd81e82ca01e36c62324b33283967"
+  },
+  "model_id": "qwen3.5-9b-mlx",
+  "embedding_model": "text-embedding-nomic-embed-text-v1.5",
+  "base_url": "http://localhost:1234/v1",
+  "prompt_version": "v1",
+  "command": "./.venv/bin/python src/triage.py --model qwen-large --ids C001 --out /Users/sebastian/Developer/disputes-agent/baseline/qwen-step-1.jsonl",
+  "working_directory": "/Users/sebastian/Developer/dispute-triage",
+  "tracked_source_diff": "",
+  "checks": {
+    "valid_json": true,
+    "category_matches_separate_gold_label": true,
+    "invalid_evidence": [],
+    "missing_citation": true,
+    "needs_human_review": false
+  },
+  "limitations": [
+    "Missing rule citation was not flagged by the existing validator.",
+    "Explanation advocates defending despite reported cancellation confirmation and no later usage.",
+    "One synthetic case is not an accuracy evaluation."
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "frozen_at": "2026-10-06T20:26:15.737575+00:00",
+  "seed": 20261006,
+  "generator_version": "6",
+  "records_hash": "6cdaadd3fd1dbc8064b8cf2afc7d72907fce9be1380a12848b87bd279513cb4b",
+  "reproduced_from_seed": true,
+  "cases": 18,
+  "development_ids": [
+    "MC-7f29dad220",
+    "MC-aa077ca73b",
+    "MC-a08605886c",
+    "MC-f22a84b146",
+    "MC-c7d1c0083d",
+    "MC-e48db1e670",
+    "MC-0876b85dc7",
+    "MC-021b944d10",
+    "MC-3a7c02a008",
+    "MC-cab68db2e1",
+    "MC-8209da7a1c",
+    "MC-f32ec10443"
+  ],
+  "held_out_ids": [
+    "MC-871dfa4f1c",
+    "MC-5e6d44e2fb",
+    "MC-3eafed972f",
+    "MC-ef1f8456ca",
+    "MC-bd14922259",
+    "MC-7b4b186cc5"
+  ],
+  "integrity_checks": {
+    "pairs_kept_together": true,
+    "expected_answer_fields_absent": true,
+    "merchant_scopes_valid": true,
+    "timestamps_have_timezones": true,
+    "chronology_possible": true,
+    "expected_answers_cite_existing_records": true,
+    "late_records_hidden": true,
+    "blind_labels_complete": true
+  },
+  "expected_decision_mix": {
+    "accept_dispute": 2,
+    "escalate": 1,
+    "respond_with_evidence": 12,
+    "wait_for_information": 3
+  },
+  "trivial_baseline": "Always \"respond with evidence\" matches 12 of 18 expected recommendations.",
+  "human_labels": {
+    "labelled_by": "Sebastian",
+    "agreement_overall": {
+      "agree": 11,
+      "of": 18
+    },
+    "agreement_independent_cases": {
+      "agree": 5,
+      "of": 7
+    },
+    "disagreements_reviewed": "approved by Sebastian, 6 October 2026: generator answers kept; accept-vs-escalate rule and security flag added to the PRD"
+  },
+  "rules": [
+    "Do not tune on held-out cases; their expected answers are known to the developer.",
+    "Any generator change creates a new dataset version; results are never compared across versions.",
+    "Event experiments run on a fresh copy; the frozen files are never modified."
+  ],
+  "limits": "Eighteen generated cases in nine contrast pairs: evidence of behaviour on known patterns, not production accuracy."
+}

@@ -1,0 +1,244 @@
+{
+  "run_id": "suite-20261009T050919Z",
+  "config": {
+    "model": "qwen3.5-9b-mlx",
+    "split": "development",
+    "records_hash": "6cdaadd3fd1d",
+    "prompt_hash": "3b58ac512d4b",
+    "code": {
+      "case_agent/agent.py": "2d1e569a5193",
+      "case_agent/workspace.py": "2231d8b1f21d",
+      "case_agent/tools.py": "07e71de57440",
+      "case_agent/schemas.py": "f536d220b1de",
+      "realworld/score_case.py": "9d2d33c6c998"
+    },
+    "rubric_version": 4,
+    "without": [
+      "delivery_cited"
+    ],
+    "features": [],
+    "resume": true,
+    "batch": {
+      "id": "batch-20261009T032726Z",
+      "run": "3/10",
+      "repeat": 1
+    }
+  },
+  "cases_passed": "5/12",
+  "passed_unaided": "1/12",
+  "passed_with_gate_help": "4/12",
+  "decision_now_correct": "8/12",
+  "baseline_always_respond_decision_now": "4/12",
+  "baseline_always_wait_decision_now": "6/12",
+  "failed_checks": {
+    "no_repeated_invalid_calls": 3,
+    "decision_now": 3,
+    "no_unneeded_questions": 3,
+    "required_evidence": 2,
+    "final_decision": 1,
+    "no_false_readiness": 1,
+    "step_timeout": 1
+  },
+  "harms": {},
+  "total_seconds": 2318.8,
+  "median_step_seconds": 17.4,
+  "cases": [
+    {
+      "case_id": "MC-7f29dad220",
+      "harms": [],
+      "pattern": "missing_delivery_scan",
+      "expected_now": "wait_for_information",
+      "decision_now": "wait_for_information",
+      "final_decision": "respond_with_evidence",
+      "resumed": true,
+      "passed": false,
+      "failed_checks": [
+        "no_repeated_invalid_calls"
+      ],
+      "gate_refusals": 1,
+      "stop_reason": "ready",
+      "model_actions": 2,
+      "seconds": 100.2
+    },
+    {
+      "case_id": "MC-aa077ca73b",
+      "harms": [],
+      "pattern": "address_conflict",
+      "expected_now": "escalate",
+      "decision_now": "wait_for_information",
+      "final_decision": null,
+      "resumed": false,
+      "passed": false,
+      "failed_checks": [
+        "decision_now",
+        "no_unneeded_questions",
+        "no_repeated_invalid_calls"
+      ],
+      "gate_refusals": 2,
+      "stop_reason": "missing_fact",
+      "model_actions": 14,
+      "seconds": 264.5
+    },
+    {
+      "case_id": "MC-a08605886c",
+      "harms": [],
+      "pattern": "partial_refund_overlap",
+      "expected_now": "wait_for_information",
+      "decision_now": null,
+      "final_decision": null,
+      "resumed": false,
+      "passed": false,
+      "failed_checks": [
+        "decision_now",
+        "required_evidence"
+      ],
+      "gate_refusals": 3,
+      "stop_reason": "budget_exhausted",
+      "model_actions": 9,
+      "seconds": 170.0
+    },
+    {
+      "case_id": "MC-f22a84b146",
+      "harms": [],
+      "pattern": "missing_delivery_scan",
+      "expected_now": "wait_for_information",
+      "decision_now": "wait_for_information",
+      "final_decision": "wait_for_information",
+      "resumed": true,
+      "passed": false,
+      "failed_checks": [
+        "final_decision",
+        "no_unneeded_questions",
+        "no_repeated_invalid_calls"
+      ],
+      "gate_refusals": 6,
+      "stop_reason": "missing_fact",
+      "model_actions": 15,
+      "seconds": 535.7
+    },
+    {
+      "case_id": "MC-c7d1c0083d",
+      "harms": [],
+      "pattern": "timestamp_offsets",
+      "expected_now": "wait_for_information",
+      "decision_now": "wait_for_information",
+      "final_decision": null,
+      "resumed": false,
+      "passed": true,
+      "failed_checks": [],
+      "gate_refusals": 1,
+      "stop_reason": "missing_fact",
+      "model_actions": 9,
+      "seconds": 207.3
+    },
+    {
+      "case_id": "MC-e48db1e670",
+      "harms": [],
+      "pattern": "cancelled_before_dispatch",
+      "expected_now": "wait_for_information",
+      "decision_now": "wait_for_information",
+      "final_decision": "respond_with_evidence",
+      "resumed": true,
+      "passed": true,
+      "failed_checks": [],
+      "gate_refusals": 1,
+      "stop_reason": "ready",
+      "model_actions": 4,
+      "seconds": 274.1
+    },
+    {
+      "case_id": "MC-0876b85dc7",
+      "harms": [],
+      "pattern": "cancelled_before_dispatch",
+      "expected_now": "accept_dispute",
+      "decision_now": "wait_for_information",
+      "final_decision": null,
+      "resumed": false,
+      "passed": false,
+      "failed_checks": [
+        "decision_now",
+        "no_unneeded_questions"
+      ],
+      "gate_refusals": 1,
+      "stop_reason": "missing_fact",
+      "model_actions": 8,
+      "seconds": 127.6
+    },
+    {
+      "case_id": "MC-021b944d10",
+      "harms": [],
+      "pattern": "partial_refund_overlap",
+      "expected_now": "respond_with_evidence",
+      "decision_now": "respond_with_evidence",
+      "final_decision": null,
+      "resumed": false,
+      "passed": false,
+      "failed_checks": [
+        "required_evidence",
+        "no_false_readiness"
+      ],
+      "gate_refusals": 0,
+      "stop_reason": "ready",
+      "model_actions": 4,
+      "seconds": 103.0
+    },
+    {
+      "case_id": "MC-3a7c02a008",
+      "harms": [],
+      "pattern": "mismatched_order_id",
+      "expected_now": "wait_for_information",
+      "decision_now": "wait_for_information",
+      "final_decision": null,
+      "resumed": false,
+      "passed": true,
+      "failed_checks": [],
+      "gate_refusals": 5,
+      "stop_reason": "missing_fact",
+      "model_actions": 16,
+      "seconds": 279.5
+    },
+    {
+      "case_id": "MC-cab68db2e1",
+      "step_timeout": "timed out",
+      "passed": false,
+      "decision_now": null,
+      "expected_now": "respond_with_evidence",
+      "failed_checks": [
+        "step_timeout"
+      ],
+      "harms": [],
+      "gate_refusals": 0,
+      "seconds": 0
+    },
+    {
+      "case_id": "MC-8209da7a1c",
+      "harms": [],
+      "pattern": "mismatched_order_id",
+      "expected_now": "respond_with_evidence",
+      "decision_now": "respond_with_evidence",
+      "final_decision": null,
+      "resumed": false,
+      "passed": true,
+      "failed_checks": [],
+      "gate_refusals": 2,
+      "stop_reason": "ready",
+      "model_actions": 6,
+      "seconds": 111.6
+    },
+    {
+      "case_id": "MC-f32ec10443",
+      "harms": [],
+      "pattern": "address_conflict",
+      "expected_now": "respond_with_evidence",
+      "decision_now": "respond_with_evidence",
+      "final_decision": null,
+      "resumed": false,
+      "passed": true,
+      "failed_checks": [],
+      "gate_refusals": 0,
+      "stop_reason": "ready",
+      "model_actions": 4,
+      "seconds": 145.3
+    }
+  ]
+}

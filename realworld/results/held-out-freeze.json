@@ -1,0 +1,39 @@
+{
+  "registered_at": "2026-10-11T23:25:09+00:00",
+  "versions": {
+    "prompt_hash": "3b58ac512d4b",
+    "code": {
+      "case_agent/agent.py": "601f2dbe09e1",
+      "case_agent/workspace.py": "4692cd6a142d",
+      "case_agent/tools.py": "07e71de57440",
+      "case_agent/schemas.py": "f536d220b1de",
+      "case_agent/team.py": "a1e93b0018eb",
+      "case_agent/checklist.py": "1af07f941e31",
+      "case_agent/worker.py": "f98d5702aba5",
+      "realworld/score_case.py": "eb87aa87ecd4"
+    }
+  },
+  "records_hash": "6cdaadd3fd1d",
+  "rubric_version": 5,
+  "model": "qwen3.5-4b",
+  "resume": true,
+  "guards": [
+    "delivery",
+    "delivery_cited",
+    "order_link",
+    "refund_status",
+    "partial_refund",
+    "cancel_timeline",
+    "address",
+    "amounts",
+    "loop"
+  ],
+  "guards_disabled": [],
+  "variants": [],
+  "methods": [
+    "agent",
+    "team",
+    "checklist"
+  ],
+  "selection_rule": "The configuration reported as the product is the method with the most full passes on the development cases in the batch run immediately before the held-out run, among methods with zero harmful outcomes; ties go to the faster method. All three methods are run once on the held-out cases and all three results are reported. Held-out results are never used to choose or change anything."
+}

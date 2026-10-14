@@ -1,0 +1,22 @@
+# Secrets and local environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+~$*
+# Local models, regenerated embeddings and private inputs
+*.gguf
+*.safetensors
+rules/rules_index.json
+private_data/
+local_logs/
+
+# Generated case-preparation runtime state
+workspace/
+**/rules_index.json
+reviews/

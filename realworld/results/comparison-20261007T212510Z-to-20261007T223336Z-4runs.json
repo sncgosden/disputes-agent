@@ -1,0 +1,477 @@
+{
+  "rubric_version": 4,
+  "configs": {
+    "config A": [
+      "suite-20261007T212510Z"
+    ],
+    "config B (+unknowns_field)": [
+      "suite-20261007T214636Z"
+    ],
+    "config C (+delivery_any_defence)": [
+      "suite-20261007T221225Z"
+    ],
+    "config D (+amount_message_v2)": [
+      "suite-20261007T223336Z"
+    ]
+  },
+  "cases": {
+    "MC-7f29dad220": {
+      "expected": "wait_for_information",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config B (+unknowns_field)": [
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config C (+delivery_any_defence)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config D (+amount_message_v2)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-aa077ca73b": {
+      "expected": "escalate",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate",
+            "harms": []
+          }
+        ],
+        "config B (+unknowns_field)": [
+          {
+            "passed": false,
+            "decision": "step_timeout",
+            "expected": "escalate",
+            "harms": []
+          }
+        ],
+        "config C (+delivery_any_defence)": [
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate",
+            "harms": []
+          }
+        ],
+        "config D (+amount_message_v2)": [
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-a08605886c": {
+      "expected": "wait_for_information",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": false,
+            "decision": null,
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config B (+unknowns_field)": [
+          {
+            "passed": false,
+            "decision": "step_timeout",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config C (+delivery_any_defence)": [
+          {
+            "passed": false,
+            "decision": null,
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config D (+amount_message_v2)": [
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-f22a84b146": {
+      "expected": "wait_for_information",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config B (+unknowns_field)": [
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config C (+delivery_any_defence)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config D (+amount_message_v2)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-c7d1c0083d": {
+      "expected": "wait_for_information",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config B (+unknowns_field)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config C (+delivery_any_defence)": [
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config D (+amount_message_v2)": [
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-e48db1e670": {
+      "expected": "wait_for_information",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config B (+unknowns_field)": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "wait_for_information",
+            "harms": [
+              "wrong_respond"
+            ]
+          }
+        ],
+        "config C (+delivery_any_defence)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config D (+amount_message_v2)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-0876b85dc7": {
+      "expected": "accept_dispute",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          }
+        ],
+        "config B (+unknowns_field)": [
+          {
+            "passed": false,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          }
+        ],
+        "config C (+delivery_any_defence)": [
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          }
+        ],
+        "config D (+amount_message_v2)": [
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-021b944d10": {
+      "expected": "respond_with_evidence",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config B (+unknowns_field)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config C (+delivery_any_defence)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config D (+amount_message_v2)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-3a7c02a008": {
+      "expected": "wait_for_information",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config B (+unknowns_field)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config C (+delivery_any_defence)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config D (+amount_message_v2)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-cab68db2e1": {
+      "expected": "respond_with_evidence",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config B (+unknowns_field)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config C (+delivery_any_defence)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config D (+amount_message_v2)": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-8209da7a1c": {
+      "expected": "respond_with_evidence",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config B (+unknowns_field)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config C (+delivery_any_defence)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config D (+amount_message_v2)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-f32ec10443": {
+      "expected": "respond_with_evidence",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config B (+unknowns_field)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config C (+delivery_any_defence)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config D (+amount_message_v2)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,514 @@
+{
+  "rubric_version": 4,
+  "configs": {
+    "config A": [
+      "suite-20261007T114428Z"
+    ],
+    "config B": [
+      "suite-20261007T121913Z"
+    ],
+    "config C": [
+      "suite-20261007T125002Z"
+    ],
+    "config D": [
+      "suite-20261007T133429Z"
+    ],
+    "config E": [
+      "suite-20261007T135800Z"
+    ]
+  },
+  "cases": {
+    "MC-7f29dad220": {
+      "expected": "wait_for_information",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config B": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config C": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config D": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config E": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ]
+      }
+    },
+    "MC-aa077ca73b": {
+      "expected": "escalate",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "escalate"
+          }
+        ],
+        "config B": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "escalate"
+          }
+        ],
+        "config C": [
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate"
+          }
+        ],
+        "config D": [
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate"
+          }
+        ],
+        "config E": [
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate"
+          }
+        ]
+      }
+    },
+    "MC-a08605886c": {
+      "expected": "wait_for_information",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config B": [
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config C": [
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config D": [
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config E": [
+          {
+            "passed": false,
+            "decision": null,
+            "expected": "wait_for_information"
+          }
+        ]
+      }
+    },
+    "MC-f22a84b146": {
+      "expected": "wait_for_information",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config B": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config C": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config D": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config E": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ]
+      }
+    },
+    "MC-c7d1c0083d": {
+      "expected": "wait_for_information",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": false,
+            "decision": "accept_dispute",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config B": [
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config C": [
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config D": [
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config E": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ]
+      }
+    },
+    "MC-e48db1e670": {
+      "expected": "wait_for_information",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config B": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config C": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config D": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config E": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ]
+      }
+    },
+    "MC-0876b85dc7": {
+      "expected": "accept_dispute",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute"
+          }
+        ],
+        "config B": [
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute"
+          }
+        ],
+        "config C": [
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute"
+          }
+        ],
+        "config D": [
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute"
+          }
+        ],
+        "config E": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "accept_dispute"
+          }
+        ]
+      }
+    },
+    "MC-021b944d10": {
+      "expected": "respond_with_evidence",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ],
+        "config B": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ],
+        "config C": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ],
+        "config D": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ],
+        "config E": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ]
+      }
+    },
+    "MC-3a7c02a008": {
+      "expected": "wait_for_information",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config B": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config C": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config D": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ],
+        "config E": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information"
+          }
+        ]
+      }
+    },
+    "MC-cab68db2e1": {
+      "expected": "respond_with_evidence",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ],
+        "config B": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ],
+        "config C": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ],
+        "config D": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ],
+        "config E": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ]
+      }
+    },
+    "MC-8209da7a1c": {
+      "expected": "respond_with_evidence",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ],
+        "config B": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ],
+        "config C": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ],
+        "config D": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ],
+        "config E": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ]
+      }
+    },
+    "MC-f32ec10443": {
+      "expected": "respond_with_evidence",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ],
+        "config B": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ],
+        "config C": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ],
+        "config D": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ],
+        "config E": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence"
+          }
+        ]
+      }
+    }
+  }
+}

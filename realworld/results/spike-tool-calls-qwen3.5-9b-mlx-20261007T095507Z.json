@@ -1,0 +1,245 @@
+{
+  "model": "qwen3.5-9b-mlx",
+  "ran_at": "20261007T095507Z",
+  "temperature": 0,
+  "reps": 3,
+  "summary": {
+    "native": {
+      "correct": "9/9",
+      "by_task": {
+        "read a case": "3/3",
+        "search evidence": "3/3",
+        "save a plan": "3/3"
+      },
+      "failures": [],
+      "median_seconds": 15.14
+    },
+    "json": {
+      "correct": "6/9",
+      "by_task": {
+        "read a case": "3/3",
+        "search evidence": "3/3",
+        "save a plan": "0/3"
+      },
+      "failures": [
+        "invalid_call"
+      ],
+      "median_seconds": 11.08
+    }
+  },
+  "calls": [
+    {
+      "mode": "native",
+      "task": "read a case",
+      "rep": 1,
+      "seconds": 18.84,
+      "tokens": 4370,
+      "raw": "{\"tool\": \"get_case\", \"arguments\": \"{\\\"merchant_id\\\":\\\"merchant_a\\\",\\\"case_id\\\":\\\"MC-7f29dad220\\\",\\\"intent\\\":\\\"read_case\\\"}\"}",
+      "tool": "get_case",
+      "executed": true,
+      "outcome": "correct",
+      "detail": null
+    },
+    {
+      "mode": "native",
+      "task": "read a case",
+      "rep": 2,
+      "seconds": 9.48,
+      "tokens": 4370,
+      "raw": "{\"tool\": \"get_case\", \"arguments\": \"{\\\"merchant_id\\\":\\\"merchant_a\\\",\\\"case_id\\\":\\\"MC-7f29dad220\\\",\\\"intent\\\":\\\"read_case\\\"}\"}",
+      "tool": "get_case",
+      "executed": true,
+      "outcome": "correct",
+      "detail": null
+    },
+    {
+      "mode": "native",
+      "task": "read a case",
+      "rep": 3,
+      "seconds": 9.47,
+      "tokens": 4370,
+      "raw": "{\"tool\": \"get_case\", \"arguments\": \"{\\\"merchant_id\\\":\\\"merchant_a\\\",\\\"case_id\\\":\\\"MC-7f29dad220\\\",\\\"intent\\\":\\\"read_case\\\"}\"}",
+      "tool": "get_case",
+      "executed": true,
+      "outcome": "correct",
+      "detail": null
+    },
+    {
+      "mode": "native",
+      "task": "search evidence",
+      "rep": 1,
+      "seconds": 14.07,
+      "tokens": 4477,
+      "raw": "{\"tool\": \"search_records\", \"arguments\": \"{\\\"merchant_id\\\":\\\"merchant_a\\\",\\\"case_id\\\":\\\"MC-7f29dad220\\\",\\\"intent\\\":\\\"search_records\\\",\\\"query\\\":\\\"tracking\\\",\\\"record_types\\\":[\\\"delivery\\\"]}\"}",
+      "tool": "search_records",
+      "executed": true,
+      "outcome": "correct",
+      "detail": null
+    },
+    {
+      "mode": "native",
+      "task": "search evidence",
+      "rep": 2,
+      "seconds": 14.02,
+      "tokens": 4477,
+      "raw": "{\"tool\": \"search_records\", \"arguments\": \"{\\\"merchant_id\\\":\\\"merchant_a\\\",\\\"case_id\\\":\\\"MC-7f29dad220\\\",\\\"intent\\\":\\\"search_records\\\",\\\"query\\\":\\\"tracking\\\",\\\"record_types\\\":[\\\"delivery\\\"]}\"}",
+      "tool": "search_records",
+      "executed": true,
+      "outcome": "correct",
+      "detail": null
+    },
+    {
+      "mode": "native",
+      "task": "search evidence",
+      "rep": 3,
+      "seconds": 15.14,
+      "tokens": 4477,
+      "raw": "{\"tool\": \"search_records\", \"arguments\": \"{\\\"merchant_id\\\":\\\"merchant_a\\\",\\\"case_id\\\":\\\"MC-7f29dad220\\\",\\\"intent\\\":\\\"search_records\\\",\\\"query\\\":\\\"tracking\\\",\\\"record_types\\\":[\\\"delivery\\\"]}\"}",
+      "tool": "search_records",
+      "executed": true,
+      "outcome": "correct",
+      "detail": null
+    },
+    {
+      "mode": "native",
+      "task": "save a plan",
+      "rep": 1,
+      "seconds": 30.09,
+      "tokens": 4847,
+      "raw": "{\"tool\": \"save_plan\", \"arguments\": \"{\\\"merchant_id\\\":\\\"merchant_a\\\",\\\"case_id\\\":\\\"MC-7f29dad220\\\",\\\"action_id\\\":\\\"plan-1\\\",\\\"intent\\\":\\\"save_plan\\\",\\\"steps\\\":[\\\"read the case\\\",\\\"request the carrier record\\\",\\\"decide after the carrier report\\\"],\\\"rationale\\\":\\\"This plan follows a logical investigation sequence: first reading the case to understand the dispute details, then requesting carrier recor",
+      "tool": "save_plan",
+      "executed": true,
+      "outcome": "correct",
+      "detail": null
+    },
+    {
+      "mode": "native",
+      "task": "save a plan",
+      "rep": 2,
+      "seconds": 29.21,
+      "tokens": 4847,
+      "raw": "{\"tool\": \"save_plan\", \"arguments\": \"{\\\"merchant_id\\\":\\\"merchant_a\\\",\\\"case_id\\\":\\\"MC-7f29dad220\\\",\\\"action_id\\\":\\\"plan-1\\\",\\\"intent\\\":\\\"save_plan\\\",\\\"steps\\\":[\\\"read the case\\\",\\\"request the carrier record\\\",\\\"decide after the carrier report\\\"],\\\"rationale\\\":\\\"This plan follows a logical investigation sequence: first reading the case to understand the dispute details, then requesting carrier recor",
+      "tool": "save_plan",
+      "executed": true,
+      "outcome": "correct",
+      "detail": null
+    },
+    {
+      "mode": "native",
+      "task": "save a plan",
+      "rep": 3,
+      "seconds": 32.56,
+      "tokens": 4847,
+      "raw": "{\"tool\": \"save_plan\", \"arguments\": \"{\\\"merchant_id\\\":\\\"merchant_a\\\",\\\"case_id\\\":\\\"MC-7f29dad220\\\",\\\"action_id\\\":\\\"plan-1\\\",\\\"intent\\\":\\\"save_plan\\\",\\\"steps\\\":[\\\"read the case\\\",\\\"request the carrier record\\\",\\\"decide after the carrier report\\\"],\\\"rationale\\\":\\\"This plan follows a logical investigation sequence: first reading the case to understand the dispute details, then requesting carrier recor",
+      "tool": "save_plan",
+      "executed": true,
+      "outcome": "correct",
+      "detail": null
+    },
+    {
+      "mode": "json",
+      "task": "read a case",
+      "rep": 1,
+      "seconds": 20.84,
+      "tokens": 3512,
+      "raw": "\n\n{\"tool\": \"get_case\", \"arguments\": {\"merchant_id\": \"merchant_a\", \"case_id\": \"MC-7f29dad220\", \"intent\": \"read_case\"}}",
+      "tool": "get_case",
+      "executed": true,
+      "outcome": "correct",
+      "detail": null
+    },
+    {
+      "mode": "json",
+      "task": "read a case",
+      "rep": 2,
+      "seconds": 10.21,
+      "tokens": 3452,
+      "raw": "\n\n```json\n{\"tool\": \"get_case\", \"arguments\": {\"merchant_id\": \"merchant_a\", \"case_id\": \"MC-7f29dad220\", \"intent\": \"read_case\"}}\n```",
+      "tool": "get_case",
+      "executed": true,
+      "outcome": "correct",
+      "detail": null
+    },
+    {
+      "mode": "json",
+      "task": "read a case",
+      "rep": 3,
+      "seconds": 11.04,
+      "tokens": 3452,
+      "raw": "\n\n```json\n{\"tool\": \"get_case\", \"arguments\": {\"merchant_id\": \"merchant_a\", \"case_id\": \"MC-7f29dad220\", \"intent\": \"read_case\"}}\n```",
+      "tool": "get_case",
+      "executed": true,
+      "outcome": "correct",
+      "detail": null
+    },
+    {
+      "mode": "json",
+      "task": "search evidence",
+      "rep": 1,
+      "seconds": 9.02,
+      "tokens": 3420,
+      "raw": "\n\n{\"tool\": \"search_records\", \"arguments\": {\"merchant_id\": \"merchant_a\", \"case_id\": \"MC-7f29dad220\", \"query\": \"tracking\", \"intent\": \"search_records\"}}",
+      "tool": "search_records",
+      "executed": true,
+      "outcome": "correct",
+      "detail": null
+    },
+    {
+      "mode": "json",
+      "task": "search evidence",
+      "rep": 2,
+      "seconds": 11.08,
+      "tokens": 3420,
+      "raw": "\n\n{\"tool\": \"search_records\", \"arguments\": {\"merchant_id\": \"merchant_a\", \"case_id\": \"MC-7f29dad220\", \"query\": \"tracking\", \"intent\": \"search_records\"}}",
+      "tool": "search_records",
+      "executed": true,
+      "outcome": "correct",
+      "detail": null
+    },
+    {
+      "mode": "json",
+      "task": "search evidence",
+      "rep": 3,
+      "seconds": 10.33,
+      "tokens": 3420,
+      "raw": "\n\n{\"tool\": \"search_records\", \"arguments\": {\"merchant_id\": \"merchant_a\", \"case_id\": \"MC-7f29dad220\", \"query\": \"tracking\", \"intent\": \"search_records\"}}",
+      "tool": "search_records",
+      "executed": true,
+      "outcome": "correct",
+      "detail": null
+    },
+    {
+      "mode": "json",
+      "task": "save a plan",
+      "rep": 1,
+      "seconds": 24.7,
+      "tokens": 3547,
+      "raw": "\n\n```json\n{\"tool\": \"save_plan\", \"arguments\": {\"merchant_id\": \"merchant_a\", \"case_id\": \"MC-7f29dad220\", \"action_id\": \"plan-1\", \"steps\": [\"read_case\", \"request_carrier_record\", \"wait_for_carrier_report\"], \"rationale\": \"Investigation plan to read case details, request carrier record for delivery evidence, and decide after receiving the carrier report.\"}}\n```",
+      "outcome": "invalid_call",
+      "tool": "save_plan",
+      "detail": "intent is required"
+    },
+    {
+      "mode": "json",
+      "task": "save a plan",
+      "rep": 2,
+      "seconds": 24.08,
+      "tokens": 3547,
+      "raw": "\n\n```json\n{\"tool\": \"save_plan\", \"arguments\": {\"merchant_id\": \"merchant_a\", \"case_id\": \"MC-7f29dad220\", \"action_id\": \"plan-1\", \"steps\": [\"read_case\", \"request_carrier_record\", \"wait_for_carrier_report\"], \"rationale\": \"Investigation plan to read case details, request carrier record for delivery evidence, and decide after receiving the carrier report.\"}}\n```",
+      "outcome": "invalid_call",
+      "tool": "save_plan",
+      "detail": "intent is required"
+    },
+    {
+      "mode": "json",
+      "task": "save a plan",
+      "rep": 3,
+      "seconds": 23.55,
+      "tokens": 3547,
+      "raw": "\n\n```json\n{\"tool\": \"save_plan\", \"arguments\": {\"merchant_id\": \"merchant_a\", \"case_id\": \"MC-7f29dad220\", \"action_id\": \"plan-1\", \"steps\": [\"read_case\", \"request_carrier_record\", \"wait_for_carrier_report\"], \"rationale\": \"Investigation plan to read case details, request carrier record for delivery evidence, and decide after receiving the carrier report.\"}}\n```",
+      "outcome": "invalid_call",
+      "tool": "save_plan",
+      "detail": "intent is required"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "method": "desk research from public first-person merchant accounts; no interviews conducted",
+  "checked_on": "2026-10-06",
+  "accounts": [
+    {
+      "id": "MR01",
+      "url": "https://community.shopify.com/t/how-can-i-handle-chargeback-fraud-after-a-partial-refund/107850",
+      "title": "How can I handle chargeback fraud after a partial refund?",
+      "published_at": "2022-03-19T18:25:00",
+      "platform": "Shopify Community",
+      "evidence_type": "self-reported merchant account, not independently verified transaction data",
+      "paraphrase": "The author reports a two-item order, an initial partial refund, a later return of the remaining item and a chargeback for the original total. They describe assembling a timeline and difficulty resolving the refund overlap.",
+      "observed_workflow_details": [
+        "line-item cancellation and partial refund",
+        "return received later",
+        "dispute amount differs from remaining order value",
+        "timeline and refund evidence assembled"
+      ],
+      "excluded_inferences": [
+        "customer fraud is established",
+        "the reported bank accounting is independently verified",
+        "the same issue occurs at the same rate for Stripe users"
+      ],
+      "product_implication": "Reconcile order, refund and dispute amounts separately. Report ledger uncertainty instead of recommending another refund automatically.",
+      "scenario_link": "partial_refund_overlap",
+      "research_status": "source re-read 6 October 2026; amounts and sequence confirmed ($500 refunded, $900 charged back, $1,400 reported loss)"
+    },
+    {
+      "id": "MR02",
+      "url": "https://www.reddit.com/r/shopify/comments/1jcavlm/",
+      "title": "Won chargeback without submitting evidence?",
+      "published_at": "2025-03-16",
+      "platform": "Reddit r/shopify",
+      "evidence_type": "self-reported merchant account, not independently verified provider state",
+      "paraphrase": "The author reports uploading evidence while waiting for a customer reply, then receiving a favourable outcome notification without manually submitting. They are unsure whether the customer withdrew the dispute and how that affects a promised partial refund.",
+      "observed_workflow_details": [
+        "evidence uploaded before submission",
+        "waiting for a customer reply",
+        "provider outcome arrives during the wait",
+        "resolution reason remains uncertain"
+      ],
+      "excluded_inferences": [
+        "uploaded evidence was reviewed by the bank",
+        "customer withdrawal caused the result",
+        "Stripe and Shopify have identical submission behaviour"
+      ],
+      "product_implication": "Keep staged evidence separate from submitted evidence. Refresh provider state on a late outcome event and invalidate obsolete action approvals.",
+      "scenario_link": "late_provider_status",
+      "research_status": "page not retrievable at capture or on re-check (6 October 2026); treated as weaker evidence"
+    }
+  ]
+}

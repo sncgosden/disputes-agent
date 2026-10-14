@@ -1,0 +1,1573 @@
+{
+  "rubric_version": 4,
+  "configs": {
+    "config A": [
+      "suite-20261007T151201Z",
+      "suite-20261007T171639Z",
+      "suite-20261007T191559Z"
+    ],
+    "config B (no delivery)": [
+      "suite-20261007T153042Z",
+      "suite-20261007T174852Z",
+      "suite-20261007T193422Z"
+    ],
+    "config C (no order_link)": [
+      "suite-20261007T154929Z",
+      "suite-20261007T180617Z",
+      "suite-20261007T195251Z"
+    ],
+    "config D (no refund_status)": [
+      "suite-20261007T160943Z",
+      "suite-20261007T182254Z",
+      "suite-20261007T201125Z"
+    ],
+    "config E (no address)": [
+      "suite-20261007T163240Z",
+      "suite-20261007T184025Z",
+      "suite-20261007T203250Z"
+    ],
+    "config F (no amounts)": [
+      "suite-20261007T165323Z",
+      "suite-20261007T185815Z",
+      "suite-20261007T205518Z"
+    ]
+  },
+  "cases": {
+    "MC-7f29dad220": {
+      "expected": "wait_for_information",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config B (no delivery)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config C (no order_link)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config D (no refund_status)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config E (no address)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config F (no amounts)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-aa077ca73b": {
+      "expected": "escalate",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate",
+            "harms": []
+          }
+        ],
+        "config B (no delivery)": [
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate",
+            "harms": []
+          }
+        ],
+        "config C (no order_link)": [
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate",
+            "harms": []
+          }
+        ],
+        "config D (no refund_status)": [
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate",
+            "harms": []
+          }
+        ],
+        "config E (no address)": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "escalate",
+            "harms": [
+              "wrong_respond"
+            ]
+          },
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "escalate",
+            "harms": [
+              "wrong_respond"
+            ]
+          },
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "escalate",
+            "harms": [
+              "wrong_respond"
+            ]
+          }
+        ],
+        "config F (no amounts)": [
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "escalate",
+            "expected": "escalate",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-a08605886c": {
+      "expected": "wait_for_information",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": false,
+            "decision": null,
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": null,
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": null,
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config B (no delivery)": [
+          {
+            "passed": false,
+            "decision": null,
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": null,
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": null,
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config C (no order_link)": [
+          {
+            "passed": false,
+            "decision": null,
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": null,
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": null,
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config D (no refund_status)": [
+          {
+            "passed": false,
+            "decision": null,
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": null,
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": null,
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config E (no address)": [
+          {
+            "passed": false,
+            "decision": null,
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": null,
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": null,
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config F (no amounts)": [
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": [
+              "invented_amount"
+            ]
+          },
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": [
+              "invented_amount"
+            ]
+          },
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": [
+              "invented_amount"
+            ]
+          }
+        ]
+      }
+    },
+    "MC-f22a84b146": {
+      "expected": "wait_for_information",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config B (no delivery)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config C (no order_link)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config D (no refund_status)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config E (no address)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config F (no amounts)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-c7d1c0083d": {
+      "expected": "wait_for_information",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config B (no delivery)": [
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config C (no order_link)": [
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config D (no refund_status)": [
+          {
+            "passed": false,
+            "decision": "accept_dispute",
+            "expected": "wait_for_information",
+            "harms": [
+              "wrong_accept"
+            ]
+          },
+          {
+            "passed": false,
+            "decision": "accept_dispute",
+            "expected": "wait_for_information",
+            "harms": [
+              "wrong_accept"
+            ]
+          },
+          {
+            "passed": false,
+            "decision": "accept_dispute",
+            "expected": "wait_for_information",
+            "harms": [
+              "wrong_accept"
+            ]
+          }
+        ],
+        "config E (no address)": [
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config F (no amounts)": [
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-e48db1e670": {
+      "expected": "wait_for_information",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config B (no delivery)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config C (no order_link)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config D (no refund_status)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config E (no address)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config F (no amounts)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-0876b85dc7": {
+      "expected": "accept_dispute",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          }
+        ],
+        "config B (no delivery)": [
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          }
+        ],
+        "config C (no order_link)": [
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          }
+        ],
+        "config D (no refund_status)": [
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          }
+        ],
+        "config E (no address)": [
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          }
+        ],
+        "config F (no amounts)": [
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "accept_dispute",
+            "expected": "accept_dispute",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-021b944d10": {
+      "expected": "respond_with_evidence",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config B (no delivery)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config C (no order_link)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config D (no refund_status)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config E (no address)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config F (no amounts)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-3a7c02a008": {
+      "expected": "wait_for_information",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config B (no delivery)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config C (no order_link)": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "wait_for_information",
+            "harms": [
+              "wrong_respond"
+            ]
+          },
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "wait_for_information",
+            "harms": [
+              "wrong_respond"
+            ]
+          },
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "wait_for_information",
+            "harms": [
+              "wrong_respond"
+            ]
+          }
+        ],
+        "config D (no refund_status)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config E (no address)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ],
+        "config F (no amounts)": [
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "wait_for_information",
+            "expected": "wait_for_information",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-cab68db2e1": {
+      "expected": "respond_with_evidence",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config B (no delivery)": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config C (no order_link)": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config D (no refund_status)": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config E (no address)": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config F (no amounts)": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-8209da7a1c": {
+      "expected": "respond_with_evidence",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config B (no delivery)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config C (no order_link)": [
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": false,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config D (no refund_status)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config E (no address)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config F (no amounts)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ]
+      }
+    },
+    "MC-f32ec10443": {
+      "expected": "respond_with_evidence",
+      "flaky_in": [],
+      "by_config": {
+        "config A": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config B (no delivery)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config C (no order_link)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config D (no refund_status)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config E (no address)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ],
+        "config F (no amounts)": [
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          },
+          {
+            "passed": true,
+            "decision": "respond_with_evidence",
+            "expected": "respond_with_evidence",
+            "harms": []
+          }
+        ]
+      }
+    }
+  }
+}

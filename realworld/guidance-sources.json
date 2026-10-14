@@ -1,0 +1,13 @@
+[
+ {"id": "stripe_testing", "url": "https://docs.stripe.com/testing.md", "kind": "provider", "edition": null, "network": null},
+ {"id": "stripe_categories", "url": "https://docs.stripe.com/disputes/categories.md", "kind": "provider", "edition": null, "network": null},
+ {"id": "stripe_reason_codes", "url": "https://docs.stripe.com/disputes/reason-codes-defense-requirements.md", "kind": "provider", "edition": null, "network": null, "network_heading_mode": "carry", "network_reset_headings": ["Local payment method reason codes", "See also"], "added_because": "Stripe's categories page points to it for per-network evidence; step 31 search showed the gap."},
+ {"id": "stripe_responding", "url": "https://docs.stripe.com/disputes/responding.md", "kind": "provider", "edition": null, "network": null},
+ {"id": "stripe_dispute_object", "url": "https://docs.stripe.com/api/disputes/object.md", "kind": "api", "edition": null, "network": null},
+ {"id": "stripe_dispute_update", "url": "https://docs.stripe.com/api/disputes/update.md", "kind": "api", "edition": null, "network": null},
+ {"id": "stripe_webhooks", "url": "https://docs.stripe.com/webhooks.md", "kind": "api", "edition": null, "network": null},
+ {"id": "stripe_idempotency", "url": "https://docs.stripe.com/api/idempotent_requests.md", "kind": "api", "edition": null, "network": null},
+ {"id": "stripe_visa_ce3", "url": "https://docs.stripe.com/disputes/api/visa-ce3.md", "kind": "provider", "edition": null, "network": null},
+ {"id": "visa_merchant_guidelines", "url": "https://www.visa.ie/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf", "kind": "scheme", "edition": "June 2024, as printed in the page footer of the captured PDF (no cover date; © 2024 Visa). Checked 6 October 2026.", "network": "visa", "page_label_pattern": "Visa Merchants \\| June 2024[ \\t]+(\\d{1,3})\\s*\\n|All Rights Reserved\\.\\s+(\\d{1,3})\\s*\\Z", "heading_pattern": "Condition\\s+(?P<code>\\d{1,2}\\.\\d{1,2})\\s*\\n\\s*[A-Z][^\\n]{3,80}(?=[\\s\\S]{0,600}Your card processor has notified you)", "section_pattern": "\\A\\s*\\d\\s+(?!Dispute Conditions)[A-Z][^\\n]{3,60}"},
+ {"id": "mastercard_chargeback_guide", "url": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf", "kind": "scheme", "edition": "Merchant Edition, 13 May 2025, as printed in the document served at this URL on 6 October 2026. Verify against the captured PDF.", "network": "mastercard", "page_label_pattern": "Merchant Edition • 13 May 2025\\s+(\\d+)"}
+]
